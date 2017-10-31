@@ -152,7 +152,7 @@ header .header-bottom .main-slider {
   position: relative;
   background-size: cover;
   max-width: auto;
-  max-height: 454px;
+  min-height: 454px;
 }
 
 header .header-bottom .main-slider img {
@@ -512,6 +512,7 @@ header .header-bottom .main-slider .main-slider-text .main-slider-title {
 
 .content .side-part {
   width: 25%;
+  height: 100%;
   background-color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
@@ -550,6 +551,13 @@ header .header-bottom .main-slider .main-slider-text .main-slider-title {
 .content .side-part .side-pic {
   max-width: 280px;
   margin: 20px;
+  -webkit-transition: opacity .1s ease;
+  -o-transition: opacity .1s ease;
+  transition: opacity .1s ease;
+}
+
+.content .side-part .side-pic:hover {
+  opacity: .9;
 }
 
 .content .side-part .categories {
@@ -597,7 +605,7 @@ header .header-bottom .main-slider .main-slider-text .main-slider-title {
 }
 
 .content .side-part .categories table tr th {
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #DDD9F2;
   border-collapse: collapse;
   text-transform: uppercase;
   padding: 10px 0;
@@ -684,7 +692,7 @@ header .header-bottom .main-slider .main-slider-text .main-slider-title {
   justify-content: center;
   max-width: 290px;
   padding: 15px 0;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #DDD9F2;
   margin: 0 25px;
 }
 
@@ -717,4 +725,301 @@ header .header-bottom .main-slider .main-slider-text .main-slider-title {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.content .side-part .posts .social {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 40px 25px;
+}
+
+.content .side-part .posts .social .fa {
+  font-size: 18px;
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+  cursor: pointer;
+}
+
+.content .side-part .posts .social .fa:hover {
+  color: #999;
+}
+
+.content .side-part .facebook-join {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 5px 25px;
+}
+
+.content .side-part .facebook-join .title {
+  background-color: #3c5a98;
+  padding: 5px 20px;
+  -webkit-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  transition: all .1s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.content .side-part .facebook-join .title:hover {
+  background-color: #143270;
+}
+
+.content .side-part .facebook-join .title h3 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.content .side-part .facebook-join .top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #DDD9F2;
+}
+
+.content .side-part .facebook-join .top .avatar {
+  max-width: 50px;
+  height: auto;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.content .side-part .facebook-join .top .right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content .side-part .facebook-join .top .right .name {
+  margin: 15px 2px 0 5px;
+}
+
+.content .side-part .facebook-join .top .right .fb-like {
+  cursor: pointer;
+}
+
+.content .side-part .facebook-join .top .right .fb-like img {
+  max-width: 60px;
+  height: auto;
+  -webkit-transition: opacity .1s ease;
+  -o-transition: opacity .1s ease;
+  transition: opacity .1s ease;
+}
+
+.content .side-part .facebook-join .top .right .fb-like img:hover {
+  opacity: .8;
+}
+
+.content .side-part .facebook-join .middle {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content .side-part .facebook-join .middle .people p {
+  margin: 10px 15px;
+}
+
+.content .side-part .facebook-join .middle .people p span {
+  color: #297A2A;
+  cursor: pointer;
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+.content .side-part .facebook-join .middle .people p span:hover {
+  color: #79D279;
+}
+
+.content .side-part .facebook-join .bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content .side-part .facebook-join .bottom .users {
+  padding: 5px 0 15px;
+  border-bottom: 1px solid #DDD9F2;
+}
+
+.content .side-part .facebook-join .bottom .users img {
+  max-height: 50px;
+  width: auto;
+  margin-top: -5px;
+  cursor: pointer;
+  opacity: .8;
+  -webkit-transition: opacity .2s ease;
+  -o-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+}
+
+.content .side-part .facebook-join .bottom .users img:hover {
+  opacity: 1;
+}
+
+.content .side-part .facebook-join .bottom .plugin {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  font-size: 12px;
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.content .side-part .facebook-join .bottom .plugin .fa {
+  font-size: 14px;
+  color: #3c5a98;
+}
+
+footer .footer-top {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 350px;
+  width: auto;
+  background-color: #212429;
+  color: #999;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+footer .footer-top .footer-top-items {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 55px 0;
+}
+
+footer .footer-top .footer-top-items .title h2 {
+  color: #fff;
+  letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+
+footer .footer-top .footer-top-items .about {
+  margin-right: 20px;
+}
+
+footer .footer-top .footer-top-items .about .text {
+  padding-bottom: 10px;
+}
+
+footer .footer-top .footer-top-items .tweets {
+  margin-right: 10px;
+}
+
+footer .footer-top .footer-top-items .tweets .post {
+  padding: 0  0 10px;
+}
+
+footer .footer-top .footer-top-items .tweets .post .posted {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  color: #fff;
+  cursor: pointer;
+}
+
+footer .footer-top .footer-top-items .tweets .post .post-text p {
+  padding-left: 27px;
+}
+
+footer .footer-top .footer-top-items .instagram .inst-pics {
+  max-width: 600px;
+  height: auto;
+  margin-top: 5px;
+}
+
+footer .footer-top .footer-top-items .instagram .inst-pics img {
+  max-width: 122px;
+  height: 101px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-top: -5px;
+  opacity: .6;
+  -webkit-transition: opacity .2s ease;
+  -o-transition: opacity .2s ease;
+  transition: opacity .2s ease;
+  cursor: pointer;
+}
+
+footer .footer-top .footer-top-items .instagram .inst-pics img:hover {
+  opacity: 1;
+}
+
+footer .footer-top .footer-top-items .comments .comment {
+  padding: 5px 0;
+  border-bottom: 1px solid #DDD9F2;
+}
+
+footer .footer-top .footer-top-items .comments .comment:last-child {
+  border-bottom: none;
+}
+
+footer .footer-top .footer-top-items .comments .comment .name {
+  color: #fff;
+}
+
+footer .footer-top .footer-top-items .comments .comment .name span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer .footer-bottom {
+  background-color: #17191c;
+}
+
+footer .footer-bottom .text {
+  text-align: center;
 }

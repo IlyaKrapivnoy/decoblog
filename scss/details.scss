@@ -146,57 +146,7 @@
 				}
 			}
 		}
-		.block-quote {
-			position: relative;
-			.quote-pic {
-				img {
-					object-fit: cover;
-					width: auto;
-					min-height: 338px;
-					opacity: .8;
-				}
-			}
-			.icon-pic {
-				position: absolute;
-				left: 455px;
-				top: -18px;
-				width: 44px;
-				height: 44px;
-				background-image: url(../img/quote-icon.png);
-				cursor: pointer;
-				}
-			.quote-text {
-				position: absolute;
-				top: 25%;
-				left: 0;
-				padding: 0 50px;
-				text-align: center;
-				.description h2 {
-					color: $white;
-					text-transform: uppercase;
-					letter-spacing: 3px;
-					padding-bottom: 20px;
-					line-height: 32px;
-				}
-				.title p {
-					color: $white;
-					text-transform: uppercase;
-					letter-spacing: 2px;
-				}
-			}
-		}
-	.video, 
-	.music {
-			padding-top: 50px;
-		}
-	.artical.lower-video {
-		margin-top: -10px;
-		background-color: $white;
-	}
-	.artical.lifestyle {
-		background-color: $white;
-		margin: 50px 0;
-	}
+
 	}
 .button {
 	display: flex;
@@ -213,8 +163,6 @@
 	}
 	}
 }
-@import "_side-part.scss";
 }
+@import "_side-part.scss";
 @import "_footer.scss";
-
-

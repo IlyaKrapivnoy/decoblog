@@ -1,0 +1,201 @@
+@import "_var.scss";
+
+header {
+	.header-top {
+		background-color: $brand-color;
+		min-height: 276px;
+		width: auto;
+		.social-menu {
+			display: flex;
+			justify-content: space-between;
+			a {
+				padding: 10px;
+				display: inline-flex;
+			}
+			.center {
+				img {
+					height: 14px;
+					width: auto;
+				}
+			}
+			.left {
+				margin-right: 80px;
+				margin-left: 1px;
+					// FLASHY SLIPPY NAV STYLES
+					.mobile-nav-button {
+					    position:fixed;
+					    margin: 11px 45px;
+					    left:0;
+					    top:0;
+					    z-index:9999;
+					    cursor:pointer;
+					    width:20px;
+					    height:15px;
+					    .mobile-nav-button__line {
+					        width:100%;
+					        height:3px;
+					        background:$white;
+					        position:relative;
+					        transition:1s ease;
+					        &:nth-of-type(2) {
+					            margin:2px 0;
+					        }
+
+					    }
+					    .mobile-nav-button__line--1 {
+					        transform: rotate(45deg);
+					        top: 8px;
+					        position: absolute;
+					    }
+					    .mobile-nav-button__line--2 {
+					        display: none;
+					    }
+					    .mobile-nav-button__line--3 {
+					        transform: rotate(135deg);
+					        top: 8px;
+					        position: absolute;        
+					    }
+					}
+
+					//Mobile Menu
+
+					.mobile-menu {
+					    display:block;
+					    max-width:330px;
+					    width:100%;
+					    left:-100%;
+					    height: 100vh;
+					    background: #ccc;
+					    position:absolute;
+					    z-index:9998;
+					    transition: 0.6s ease;
+					    top:0;
+					    opacity:0;
+					    ul {
+					        position: relative;
+					        top: 50%;
+					        transform: translateY(-50%);
+					        padding:0;
+					        li {
+					            list-style: none;
+					            a {
+					                width:100%;
+					                max-width:1200px;
+					                margin:0 auto;
+					                display:block;
+					                text-align: center;
+					                text-decoration:none;
+					                color:$black;
+					                font-size: 22px;
+					                font-weight: bold;
+					                overflow:hidden;
+					                position:relative;
+					                letter-spacing: 1px;
+					                &:after {
+					                    content:'';
+					                    background:$black;
+					                    width:100%;
+					                    height:100%;
+					                    position:absolute;
+					                    left:-100%;
+					                    top:0;
+					                    z-index:-1;
+					                    transition:1s ease;
+					                }
+					                &:hover {
+					                   &:after {
+					                    left:0;
+					                   }
+					                   color:$white;
+					                }
+					            }
+					        }
+					    }
+					    img {
+					        position: absolute;
+					        width: 150px;
+					        display: block;
+					        left: 50%;
+					        top: 3rem;
+					        transform: translatex(-50%);
+					        padding: 0;
+					        text-align: center;
+					    }
+					}
+					.mobile-menu--open {
+						position: fixed;
+					    left:0;
+					    opacity:1;
+					}
+		// mobile ends
+			}
+			.left a, 
+			.right a {
+				border-right: 1px solid #3c3c3c;
+			}
+			.left a,
+			.right a:first-child{
+				border-left: 1px solid #3c3c3c;
+			}
+			.fa {
+			color: $white;
+			font-size: 16px;
+			transition: color .2s ease;
+			&:hover {
+				color: #999;
+			}
+			&.active {
+				color: #999;
+			}
+			}
+			.fa-facebook,
+			.fa-rss,
+			.fa-bars {
+				padding: 0 5px;
+			}
+			 .fa-twitter,
+			 .fa-search{
+			 	padding: 0 2px;
+			 }
+			.fa-facebook, 
+			.fa-search {
+				font-size: 14px;
+			}
+		}
+		
+	}
+	.header-bottom {
+		width: 100%;
+		margin-top: -241px;
+		.main-slider {
+			position: relative;
+			background-size: cover;
+			max-width: auto;
+			min-height: 454px;
+			img {
+				width: 1300px;
+				height: auto;
+			}
+			.main-slider-text {
+				position: absolute;
+				width: 29%;
+				top: 60%;
+				left: 100px;
+				color: $white;
+				.main-slider-description {
+					font-family: $text-font;
+					letter-spacing: 3px;
+				}
+				.main-slider-title {
+					font-family: $text-font;
+					font-weight: 700;
+					text-transform: uppercase;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+}
+
+
+ 

@@ -1,0 +1,77 @@
+header .header-top {
+  background-color: #212429;
+  min-height: 276px;
+  width: auto; }
+  header .header-top .social-menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    header .header-top .social-menu a {
+      padding: 10px;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+    header .header-top .social-menu .center img {
+      height: 14px;
+      width: auto; }
+    header .header-top .social-menu .left {
+      margin-right: 80px;
+      margin-left: 1px; }
+    header .header-top .social-menu .left a,
+    header .header-top .social-menu .right a {
+      border-right: 1px solid #3c3c3c; }
+    header .header-top .social-menu .left a,
+    header .header-top .social-menu .right a:first-child {
+      border-left: 1px solid #3c3c3c; }
+    header .header-top .social-menu .fa {
+      color: #fff;
+      font-size: 16px;
+      -webkit-transition: color .2s ease;
+      -o-transition: color .2s ease;
+      transition: color .2s ease; }
+      header .header-top .social-menu .fa:hover {
+        color: #999; }
+      header .header-top .social-menu .fa.active {
+        color: #999; }
+    header .header-top .social-menu .fa-facebook,
+    header .header-top .social-menu .fa-rss,
+    header .header-top .social-menu .fa-bars {
+      padding: 0 5px; }
+    header .header-top .social-menu .fa-twitter,
+    header .header-top .social-menu .fa-search {
+      padding: 0 2px; }
+    header .header-top .social-menu .fa-facebook,
+    header .header-top .social-menu .fa-search {
+      font-size: 14px; }
+
+header .header-bottom {
+  width: 100%;
+  margin-top: -241px; }
+  header .header-bottom .main-slider {
+    position: relative;
+    background-size: cover;
+    max-width: auto;
+    min-height: 454px; }
+    header .header-bottom .main-slider img {
+      width: 1300px;
+      height: auto; }
+    header .header-bottom .main-slider .main-slider-text {
+      position: absolute;
+      width: 29%;
+      top: 60%;
+      left: 100px;
+      color: #fff; }
+      header .header-bottom .main-slider .main-slider-text .main-slider-description {
+        font-family: "Hind", sans-serif;
+        letter-spacing: 3px; }
+      header .header-bottom .main-slider .main-slider-text .main-slider-title {
+        font-family: "Hind", sans-serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px; }

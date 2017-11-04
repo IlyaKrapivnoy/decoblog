@@ -295,7 +295,7 @@ header .header-top {
       .content .message .second-line input {
         background-color: #fff;
         border: none;
-        min-height: 250px;
+        min-height: 240px;
         min-width: 100%;
         padding: 0 14px 200px;
         text-align: auto; }

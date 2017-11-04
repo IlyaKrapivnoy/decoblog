@@ -100,6 +100,12 @@
 					line-height: 28px;
 				}
 			}
+			.teg {
+				display: flex;
+				justify-content: center;
+				align-items: baseline;
+				cursor: pointer;
+				}
 		}
 		.deco-line {
 			width: 100%;
@@ -146,13 +152,125 @@
 				}
 			}
 		}
+		.mini-post {
+			background-color: $white;
+			display: flex;
+			margin: 50px 0;
+			.left {
+				margin: 0 0 -8px 0;
+				img {
+					min-height: 160px;
+					min-width: 160px;
+					cursor: pointer;
+					opacity: .9;
+					// object-fit: cover;
+				}
+			}
+			.right {
+				margin: 15px 20px;
+				.title {
+					display: flex;
+					justify-content: space-between;
+					text-transform: uppercase;
+					margin-bottom: 15px;
+					.name {
+						letter-spacing: 1px;
+						cursor: pointer;
+					}
+				}
+				.descr {
+					cursor: pointer;
+					transition: color .2s ease;
+					&:hover {
+						color: #eee;
+					}
+				}
+			}
+		}
+		.recomended {
+			background-color: $white;
+			display: flex;
+			flex-direction: column;
+			.title {
+				padding: 30px 20px 20px;
+				cursor: pointer;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+			.cards {
+				display: flex;
+				.card {
+					display: flex;
+					flex-direction: column;
+					margin: 20px 20px 30px;
+					.pic {
+						
+						img {
+							max-width: 200px;
+							max-height: 200px;
+							// min-width: 25%;
+							// height: auto;
+							opacity: .8;
+							transition: opacity .2s ease;
+							cursor: pointer;
+							&:hover {
+								opacity: 1;
+							}
+						}
+					}
+					.descr {
+						h3 {
+							text-transform: uppercase;
+							cursor: pointer;
+						}
+					}
+				}
+			}
+		}
+		.socials {
+			display: flex;
+			justify-content: space-between;
+			margin: 37px 0;
+			.social-btn {
+				display: flex;
+				background-color: $white;
+				&:hover {
+					background-color: #eee;
+				}
+				.left {
+					background-color: $black;
+					padding: 10px 20px;
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+					transition: all .1s ease;
+					.fa {
+						color: $white;
+						font-size: 20px;
+					}
+				}
+				.right {
+					
+					padding: 10px 40px;
+					p {
+						cursor: pointer;
+					}
+					&:hover {
+						background-color: #eee;
+					}
+				}
+			}
+		}
 		.block-quote {
 			position: relative;
+			margin-bottom: 25px;
+			margin-top: -10px;
 			.quote-pic {
+				object-fit: cover;
+				width: auto;
+				max-height: 200px; 
+				overflow: hidden;
 				img {
-					object-fit: cover;
-					width: auto;
-					min-height: 338px;
 					opacity: .8;
 				}
 			}

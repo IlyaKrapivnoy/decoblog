@@ -182,6 +182,7 @@ header {
 			.info {
 				padding: 20px 40px;
 				background-color: $white;
+				margin-bottom: 8px;
 				.title {
 					padding-bottom: 15px;
 					border-bottom: 1px solid $bg-color;
@@ -219,15 +220,26 @@ header {
 	}
 .message {
 	display: flex;
-	// justify-content: space-between;
 	flex-direction: column;
 	margin: 40px 0;
 	.first-line {
 		display: flex;
+		margin-bottom: 20px;
 	}
-	// .second-line {
-	// 	display: flex;
-	// }
+	.second-line {
+		min-width: 470px;
+		input {
+			background-color: $white;
+			border: none;
+			min-height: 250px;
+			min-width: 100%;
+			padding: 0 14px 200px;
+			text-align: auto;
+			&[type="textarea"]::-webkit-input-placeholder {
+				text-transform: uppercase;
+			}
+		}
+	}
 	form input {
 		background-color: $white;
 		border: none;
@@ -237,18 +249,25 @@ header {
 			margin-right: 15px;
 		}
 	}
-	button {
-		background-color: $title-color;
-		color: $white;
-		border: none;
-		text-transform: uppercase;
-		letter-spacing: 3px;
-		font-size: 12px;
-		padding: 0 60px;
-		cursor: pointer;
-		transition: all .2s ease;
-		&:hover {
-			background-color: ($title-color / 70%);
+	.btn {
+		display: flex;
+		justify-content: flex-end;
+		button {
+			margin-top: 30px;
+			max-height: 40px;
+			max-width: 200px;
+			background-color: $title-color;
+			color: $white;
+			border: none;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+			font-size: 12px;
+			padding: 0 60px;
+			cursor: pointer;
+			transition: all .2s ease;
+			&:hover {
+				background-color: ($title-color / 70%);
+			}
 		}
 	}
 }

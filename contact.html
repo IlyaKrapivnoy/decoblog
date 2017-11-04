@@ -28,7 +28,6 @@
 					        <li><a href="index.html">Home</a></li>
 					        <li><a href="about.html">About</a></li>
 					        <li><a href="news.html">News</a></li>
-					        <li><a href="details.html">Details</a></li>
 					        <li><a href="contact.html">Contact</a></li>                 
 					      </ul>
 					    </nav>
@@ -56,12 +55,7 @@
 				<div class="main-part">
 					<div class="contact-info">
 						<div class="google-map">
-							<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-							<div style='overflow:hidden;height:290px;width:400px;'>
-							<div id='gmap_canvas' style='height:290px;width:400px;'>
-							</div>
-							<div><small><a href="https://embedgooglemaps.com/"> </a></small></div>
-							<div><small><a href="https://mrpromokod.ru/">View https://mrpromokod.ru</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:9,center:new google.maps.LatLng(34.1293528,-117.43231049999997),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(34.1293528,-117.43231049999997)});infowindow = new google.maps.InfoWindow({content:'<strong>Название</strong><br>USA, Promo<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d65940.72777803661!2d-112.06338153491907!3d41.25252097601948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875338164bc48bdf%3A0x6e8274bf6be7b727!2z0J_RgNC-0LzQvtC90YLQvtGA0Lgg0J_QvtC50L3Rgiwg0K7RgtCwIDg0MzA3LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1509758015568" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 						<div class="info">
 							<div class="title">
@@ -94,12 +88,13 @@
 								<input type="email" placeholder="YOUR EMAIL ADDRESS">
 							</form>
 						</div>
-					<!-- 	<div class="second-line">
-							<form action="get">
-								<input type="text" placeholder="WEBSITE ADDRESS">
-							</form>
-						</div> -->
-						<!-- <button>send message</button> -->
+						<div class="second-line">
+							<input type="textarea" placeholder="Please write a message here!">
+						</div>
+						<div class="btn">
+							<button>send message</button>
+						</div>
+						
 					</div>
 					
 
